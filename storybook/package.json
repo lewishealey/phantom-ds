@@ -1,0 +1,25 @@
+{
+  "name": "storybook",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "prestorybook": "npm --prefix ../design-system run build",
+    "storybook": "storybook dev -p 6006",
+    "build": "npm run prestorybook && storybook build"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.20",
+    "@storybook/addon-interactions": "^7.6.20",
+    "@storybook/addon-links": "^7.6.20",
+    "@storybook/cli": "^7.6.20",
+    "@storybook/react-webpack5": "^7.6.20",
+    "@storybook/testing-library": "^0.2.2",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "design-system": "file:../design-system",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

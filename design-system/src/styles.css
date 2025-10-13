@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@source "./**/*.{ts,tsx}";
+
+:root {
+  /* Text & links */
+  --ds-text: #172B4D; /* color.text */
+  --ds-text-inverse: #FFFFFF; /* color.text.inverse */
+  --ds-link: #0C66E4; /* color.link */
+  --ds-text-subtle: #44546F; /* color.text.subtle */
+
+  /* Brand backgrounds */
+  --ds-background-brand-bold: #0C66E4; /* color.background.brand.bold */
+  --ds-background-brand-bold-hovered: #0055CC; /* hovered */
+  --ds-background-brand-bold-pressed: #09326C; /* pressed */
+
+  /* Neutral backgrounds */
+  --ds-background-neutral: #091E420F; /* color.background.neutral */
+  --ds-background-neutral-hovered: #091E4224;
+  --ds-background-neutral-pressed: #091E424F;
+
+  /* Borders */
+  --ds-border-input: #8590A2; /* color.border.input */
+  --ds-border-focused: #388BFF; /* color.border.focused */
+
+  /* Shadows */
+  --ds-shadow-overlay: 0px 8px 12px #091E4226, 0px 0px 1px #091E424F;
+  --ds-shadow-raised: 0px 1px 1px #091E4240, 0px 0px 1px #091E424F;
+
+  /* Radii */
+  --ds-radius-xs: 0.125rem;
+  --ds-radius-sm: 0.25rem;
+  --ds-radius-md: 0.375rem;
+  --ds-radius-lg: 0.5rem;
+}
+
+@layer base {
+  *, *::before, *::after { border-color: var(--ds-border-input); }
+  body { color: var(--ds-text); }
+}
+
+
