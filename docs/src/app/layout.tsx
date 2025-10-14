@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import 'design-system/dist/styles.css'
+import '../../../design-system/dist/styles.css'
 
 export const metadata: Metadata = {
   title: 'Design System Docs',

@@ -150,7 +150,10 @@ function setNested(target: any, path: string[], value: string) {
   let obj = target
   for (let i = 0; i < path.length - 1; i++) {
     const key = path[i]
-    if (!(key in obj)) obj[key] = {}
+    // If the key doesn't exist or is a primitive value (string), create/replace with empty object
+    if (!(key in obj) || typeof obj[key] !== 'object' || obj[key] === null) {
+      obj[key] = {}
+    }
     obj = obj[key]
   }
   obj[path[path.length - 1]] = value

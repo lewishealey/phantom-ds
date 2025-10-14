@@ -1,0 +1,29 @@
+{
+  "name": "phantom-ds-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Design system monorepo with Tailwind, Atlassian tokens, Storybook, docs, and site",
+  "scripts": {
+    "build:ds": "npm --prefix design-system run build",
+    "dev:storybook": "npm --prefix storybook run storybook",
+    "dev:docs": "npm --prefix docs run dev",
+    "dev:site": "npm --prefix site run dev",
+    "build:storybook": "npm --prefix storybook run build",
+    "build:docs": "npm --prefix docs run build",
+    "build:site": "npm --prefix site run build",
+    "start:docs": "npm run build:docs && npm --prefix docs run start",
+    "start:site": "npm run build:site && npm --prefix site run start",
+    "install:all": "npm --prefix design-system install && npm --prefix storybook install && npm --prefix docs install && npm --prefix site install",
+    "clean": "rm -rf design-system/node_modules design-system/dist storybook/node_modules storybook/storybook-static docs/node_modules docs/.next site/node_modules site/.next"
+  },
+  "keywords": [
+    "design-system",
+    "tailwind",
+    "tokens",
+    "storybook",
+    "nextjs"
+  ],
+  "author": "",
+  "license": "ISC"
+}
+

@@ -1,0 +1,21 @@
+{
+  "extends": "../design-system/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "stories/**/*",
+    ".storybook/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+
