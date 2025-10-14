@@ -1,3 +1,5 @@
+'use client'
+
 import { Heading, Text, Button } from 'design-system'
 
 export default function Page() {
